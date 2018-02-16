@@ -725,3 +725,7 @@ li.nav__search,
 ._3ThEC._7ol-- ._1Xn7Q:nth-child(2) {
     width: 15%;
 }
+
+._3ThEC._7ol-- ._1Xn7Q:hover {
+    cursor: pointer;
+}
