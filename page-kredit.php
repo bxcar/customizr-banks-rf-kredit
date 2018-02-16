@@ -219,17 +219,25 @@ wp_head(); ?>
                 <div class="_1Xn7Q" data-reactid="273">
                     <span class="" data-reactid="274"><!-- react-text: 275 -->Сортировка:<!-- /react-text --></span>
                 </div>
-                <div class="_1Xn7Q" data-reactid="276"><span class="_2BeSz" data-reactid="277"><!-- react-text: 278 -->Ставка
-                        <!-- /react-text --><svg class="_2YJR6" data-reactid="279"><use
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-thin"
-                                    data-reactid="280"></use></svg></span>
+                <div class="_1Xn7Q" data-reactid="276">
+                    <span class="_2BeSz" data-reactid="277"><!-- react-text: 278 -->Ставка&nbsp;<!-- /react-text -->
+                        <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
+                    </span>
                 </div>
-                <div class="_1Xn7Q" data-reactid="281"><span class="_2BeSz _257nv" data-reactid="282"><!-- react-text: 283 -->Платеж
-                        <!-- /react-text --><svg class="_2YJR6" data-reactid="284"><use
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down-thin"
-                                    data-reactid="285"></use></svg></span></div>
-                <div class="_1Xn7Q h1KaH" data-reactid="286"><span class="" data-reactid="287"><!-- react-text: 288 -->Переплата
-                        <!-- /react-text --></span></div>
+                <div class="_1Xn7Q" data-reactid="281">
+                    <span class="_2BeSz _257nv" data-reactid="282"><!-- react-text: 283 -->Платеж&nbsp;
+                        <!-- /react-text --><svg width="16" height="16" viewBox="0 0 1792 1792"
+                                                 xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
+                    </span>
+                </div>
+                <div class="_1Xn7Q h1KaH" data-reactid="286">
+                    <span class="" data-reactid="287"><!-- react-text: 288 -->Переплата&nbsp;
+                        <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
+                                    d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
+                        <!-- /react-text --></span>
+                </div>
             </div>
         </div>
         <div style="border-bottom:1px solid #fff6f6" id="table-fx">
