@@ -254,6 +254,7 @@ wp_head(); ?>
         </div>
         <input id="id_theme" name="id_theme" type="hidden" value="<? echo get_template_directory_uri() ?>">
         <div id="list_bank"></div>
+        <a href="#" id="loadMore">Загрузить больше предложений&nbsp;<svg data-cust-att="sort-parameter" data-type="rate" width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path></svg></a>
     </div>
     <div class="va_block">
         <div id="va-accordion" class="va-container">
@@ -1482,4 +1483,4 @@ wp_head(); ?>
         });
     });
 </script>
-<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort.js"></script>
+<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-credits.js"></script>
