@@ -3,10 +3,10 @@ var sort_params = document.getElementById('sort-params');
 jQuery(sort_params).click(function(e) {
     if (e.target.getAttribute('data-cust-att') != 'sort-parameter') return;
     // jQuery('div#list_bank ul').empty(); //I don't know why, but it's not necessary
-    sortGrid(e.target.getAttribute('data-type'));
+    sort_credits(e.target.getAttribute('data-type'));
 });
 
-function sortGrid(type) {
+function sort_credits(type) {
     var elemObj = jQuery("div#list_bank ul li._1EEzS");
 
     elemObj.sort(function(a,b){
