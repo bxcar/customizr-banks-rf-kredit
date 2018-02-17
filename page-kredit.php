@@ -213,28 +213,28 @@ wp_head(); ?>
                             условия <i
                                     class="fa fa-angle-down"></i></a></div>
         </section>
-        <div data-reactid="270">
+        <div data-reactid="270" id="sort-params">
             <div style="padding-bottom: 0;" data-reactid="271"></div>
             <div class="_3ThEC _7ol--" style="transform: translateZ(0px);" data-reactid="272">
                 <div class="_1Xn7Q" data-reactid="273">
                     <span class="" data-reactid="274"><!-- react-text: 275 -->Сортировка:<!-- /react-text --></span>
                 </div>
-                <div class="_1Xn7Q" data-reactid="276">
-                    <span class="_2BeSz" data-reactid="277"><!-- react-text: 278 -->Ставка&nbsp;<!-- /react-text -->
-                        <svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
+                <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="276" data-type="rate">
+                    <span class="_2BeSz" data-reactid="277" data-cust-att="sort-parameter" data-type="rate"><!-- react-text: 278 -->Ставка&nbsp;<!-- /react-text -->
+                        <svg data-cust-att="sort-parameter" data-type="rate" width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                 </div>
-                <div class="_1Xn7Q" data-reactid="281">
-                    <span class="_2BeSz" data-reactid="282"><!-- react-text: 283 -->Платеж&nbsp;
-                        <!-- /react-text --><svg width="16" height="16" viewBox="0 0 1792 1792"
+                <div class="_1Xn7Q" data-cust-att="sort-parameter" data-reactid="281" data-type="pay">
+                    <span class="_2BeSz" data-reactid="282" data-cust-att="sort-parameter" data-type="pay"><!-- react-text: 283 -->Платеж&nbsp;
+                        <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="pay" width="16" height="16" viewBox="0 0 1792 1792"
                                                  xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                     </span>
                 </div>
-                <div class="_1Xn7Q h1KaH" data-reactid="286">
-                    <span class="_2BeSz" data-reactid="287"><!-- react-text: 288 -->Переплата&nbsp;
-                        <!-- /react-text --><svg width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
+                <div class="_1Xn7Q h1KaH" data-cust-att="sort-parameter" data-reactid="286" data-type="overpay">
+                    <span class="_2BeSz" data-reactid="287" data-cust-att="sort-parameter" data-type="overpay"><!-- react-text: 288 -->Переплата&nbsp;
+                        <!-- /react-text --><svg data-cust-att="sort-parameter" data-type="overpay" width="16" height="16" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path
                                     d="M1395 736q0 13-10 23l-466 466q-10 10-23 10t-23-10l-466-466q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"/></svg>
                         </span>
                 </div>
@@ -1482,3 +1482,4 @@ wp_head(); ?>
         });
     });
 </script>
+<script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort.js"></script>

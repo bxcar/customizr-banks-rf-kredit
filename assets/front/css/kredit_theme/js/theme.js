@@ -217,7 +217,7 @@ function change(cart) {
 
             console.log(str);
 
-            table = table + "<li class='_1EEzS' ><div class='TJbldd'><div class='_2FLAd' >" +
+            table = table + "<li class='_1EEzS' data-rate='" + rate + "' data-pay='" + month_p + "' data-overpay='" + over_p + "'><div class='TJbldd'><div class='_2FLAd' >" +
                 "<div class='wqub- aqIhJ _3vjgr'><div class='_2Owx8 _18vXl' >" +
                 "<div class='OjtGY'><div class='ma2lQ _2I_mJ' ><div class='_34wto' >" +
                 "<div class='_3a6CO _2VQfE _21AWC _2t8V0 _1aKxh'> " +

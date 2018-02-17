@@ -732,3 +732,7 @@ li.nav__search,
 ._3ThEC._7ol-- ._1Xn7Q:hover span {
     color: #069ed4;
 }
+
+#sort-params div._1Xn7Q:hover {
+    background-color: #f6f5f5;
+}
