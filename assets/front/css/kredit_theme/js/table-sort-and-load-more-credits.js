@@ -27,7 +27,7 @@ jQuery(function () {
     jQuery("div#list_bank li._1EEzS").slice(0, 3).show();
     jQuery("#loadMore").on('click', function (e) {
         e.preventDefault();
-        jQuery("div#list_bank li._1EEzS:hidden").slice(0, 5).slideDown();
+        jQuery("div#list_bank li._1EEzS:hidden").slice(0, 15).slideDown();
         if (jQuery("div#list_bank li._1EEzS:hidden").length == 0) {
             // jQuery("#loadMore").fadeOut('slow');
         }
@@ -36,3 +36,5 @@ jQuery(function () {
         }, 1500);*/
     });
 });
+
+//https://codepen.io/elmahdim/pen/sGkvH

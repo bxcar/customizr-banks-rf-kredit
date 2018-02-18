@@ -255,12 +255,12 @@ function change(cart) {
 
                 "<span class='currency-symbol'> " +
                 str_v
-                + " /мес.</span></div><div class='_1pSh9' style='margin-bottom:-110px;'>" +
+                + " /мес.</span></div><div class='_1pSh9' style='/*margin-bottom:-110px;*/'>" +
                 "Платеж</div></div></div></div><div class='_2Owx8 _18vXl'><div class='OjtGY sgnWK'>" +
                 "<div class='ma2lQ _2I_mJ'><div class='TJbCk _11Oua _3YiJZ _1IV07'  style='margin-top:30px;'>" +
                 over_p +
 
-                "<span class='currency-symbol'></span></div><div class='_1pSh9'  style='margin-bottom:-110px;'>" +
+                "<span class='currency-symbol'></span></div><div class='_1pSh9'  style='/*margin-bottom:-110px;*/'>" +
                 "Переплата</div></div></div></div><div class='_2Owx8 _18vXl _30A4I'><div class='OjtGY' >" +
                 "<div class='ma2lQ _37Nkr' ><div ><div class='_3ktnw _36BEl' ><a style='display:none;' target='_blank' >" +
                 "Сравнить</a></div><a target='_blank' class='_2sdWW _1AAND RaZ2S _3x77s'  data-test='ui-button' >" +

@@ -824,3 +824,23 @@ li.nav__search,
         border-top: 0;
     }
 }
+
+#list_bank ._3ktnw {
+    margin-bottom: 15px;
+}
+
+#list_bank .RaZ2S {
+    background-color: #0dd149;
+    color: #fff;
+}
+
+#list_bank .RaZ2S:hover {
+    background-color: #0bbc41;
+}
+#list_bank ._34wto {
+    justify-content: left;
+}
+
+.navbar.area {
+    margin-left: 0;
+}
