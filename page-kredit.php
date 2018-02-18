@@ -65,7 +65,7 @@ wp_head(); ?>
                                         class="calculator-list-theme__header-region-name"></span></span></div>
                     </div>
                     <div class="_30VPM">
-                        <div class="WXTuD _Szkx">
+                        <div class="WXTuD _Szkx fx">
                             <div class="_3SAiO _1wJD0 calculator-list-theme__label">Выберите сумму кредита</div>
                             <div class="" data-test="ui-group">
                                 <div class="_2J6fq">
@@ -82,7 +82,7 @@ wp_head(); ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="WXTuD">
+                            <div class="WXTuD WXTuD-fx">
                                 <div class="_3SAiO _1wJD0 calculator-list-theme__label fx">Валюта</div>
                                 <div data-test="ui-select" class="_129hA _129hA-fx">
                                     <div class="_3_n91 _1e74P _1fswf" data-test="ui-select-input">
