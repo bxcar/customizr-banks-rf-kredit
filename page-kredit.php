@@ -469,343 +469,7 @@ wp_head(); ?>
         </div>
     </div>
 </div></div></div>
-<script>$(function () {
-        $("#slider-range").slider({
-            range: true,
-            min: 1,
-            max: 1500,
-            values: [1, 500],
-            step: 1,
-            slide: function (event, ui) {
-                $("#price").val(ui.values[1] * 1000);
-                $("#slider-range_dop").slider("option", "values", [1, ui.values[1] * 1000]);
-                document.getElementById('price_dop').value = ui.values[1] * 1000;
-                Get_PotrKr();
-            }
-        });
-        $("#price").val($("#slider-range").slider("values", 1) * 1000);
-    });    </script>
-<script>$(function () {
-        $("#slider-range_dop").slider({
-            range: true,
-            min: 1,
-            max: 1500,
-            values: [1, 1500],
-            step: 1,
-            slide: function (event, ui) {
-                $("#price_dop").val(ui.values[1] * 1000);
-                $("#slider-range").slider("option", "values", [1, ui.values[1] * 1000]);
-                document.getElementById('price').value = ui.values[1] * 1000;
-                Get_PotrKr();
-            }
-        });
-        $("#price_dop").val($("#slider-range_dop").slider("values", 1) * 1000);
-    });    </script>
-<script>        function show_dop() {
-        $('#overlay').show();
-    }
-    function close_dop() {
-        $('#overlay').hide();
-    }
-    function clear_dop() {
-        $("#slider-range_dop").slider("option", "values", [1, 102]); //changeFX was 500
-        $("#price_dop").val(100000); //changeFX was 500
-        $("#slider-range").slider("option", "values", [1, 102]); //changeFX was 500
-        $("#price").val(100000); //changeFX was 500
-        $("#cur_period").val('3 года');
-        $("#cur_period_dop").val('3 года');
-        $("#cur_city_dop").val('');
-        $("#zalog_cur").val('Неважно');
-        $("#cur_target").val('Любая');
-        $("#cur_poruch").val('Неважно');
-        $("#cur_podtv_dohod").val('Любое');
-        $("#cur_form_vidach").val('Любая');
-        $("#cur_srok_rasm").val('Неважен');
-        $("#cur_registr").val('Не важно');
-        $("#cur_category").val('Неважно');
-        $("#cur_stag").val('Неважен');
-        $("#cur_stag_last").val('Неважен');
-        select_currency("₽");
-        Get_PotrKr();
-    }            </script>
-<script type="text/javascript">            $(function () {
-        l1 = document.getElementById('va-1').innerHTML.length;
-        l2 = document.getElementById('va-2').innerHTML.length;
-        l3 = document.getElementById('va-3').innerHTML.length;
-        maxl = l1;
-        if (l2 > l1) maxl = l2;
-        if (l3 > l2) maxl = l3;
-
-        if (document.body.clientWidth < 768) {
-            k = 54;
-            v = 25;
-            vh = 100;
-
-        }
-        else {
-            k = 116;
-            v = 30;
-            vh = 160;
-
-        }
-        $('#va-accordion').vaccordion({
-            visibleSlices: 5,
-            accordionH: vh + (maxl / k) * 30,
-            expandedHeight: maxl,
-            expandedHeight1: vh + (l1 / k) * v,
-            expandedHeight2: vh + (l2 / k) * v,
-            expandedHeight3: vh + (l3 / k) * v,
-
-            animOpacity: 1,
-            contentAnimSpeed: 2000,
-            lengthSlide: maxl / k
-        });
-    });        </script>
-<script> function select_cur_dop() {
-        if ($("#currency_dop").css('visibility') == 'hidden') {
-            $("#currency_dop").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#currency_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    } </script>
-<script>function select_cur() {
-        if ($("#currency").css('visibility') == 'hidden') {
-            $("#currency").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#currency").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    } </script>
-<script>function select_cur_target() {
-        if ($("#target").css('visibility') == 'hidden') {
-            $("#target").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#target").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_cur_poruch() {
-        if ($("#poruch").css('visibility') == 'hidden') {
-            $("#poruch").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#poruch").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_cur_form_vidach() {
-        if ($("#form_vidach").css('visibility') == 'hidden') {
-            $("#form_vidach").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#form_vidach").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_cur_srok_rasm() {
-        if ($("#srok_rasm").css('visibility') == 'hidden') {
-            $("#srok_rasm").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#srok_rasm").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_cur_podtv_dohod() {
-        if ($("#podtv_dohod").css('visibility') == 'hidden') {
-            $("#podtv_dohod").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#podtv_dohod").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_category() {
-        if ($("#category").css('visibility') == 'hidden') {
-            $("#category").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#category").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_stag() {
-        if ($("#stag").css('visibility') == 'hidden') {
-            $("#stag").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#stag").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_stag_last() {
-        if ($("#stag_last").css('visibility') == 'hidden') {
-            $("#stag_last").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#stag_last").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_registr() {
-        if ($("#registr").css('visibility') == 'hidden') {
-            $("#registr").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#registr").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_period() {
-        if ($("#period").css('visibility') == 'hidden') {
-            $("#period").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#period").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function select_period_dop() {
-        if ($("#period_dop").css('visibility') == 'hidden') {
-            $("#period_dop").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#period_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function zalog_select() {
-        if ($("#zalog").css('visibility') == 'hidden') {
-            $("#zalog").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
-        } else {
-            $("#zalog").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        }
-    }</script>
-<script>function price_change_dop() {
-        a = document.getElementById('price_dop').value;
-        if (a >= 10000 && a <= 15000000) {
-            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
-            $("#slider-range").slider("option", "values", [1, a / 10000]);
-            Get_PotrKr();
-        }
-    }</script>
-<script>function price_change() {
-        a = document.getElementById('price').value;
-        if (a >= 10000 && a <= 15000000) {
-            $("#slider-range").slider("option", "values", [1, a / 10000]);
-            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
-            Get_PotrKr();
-        }
-    }</script>
-<script>function select_currency(a) {
-        $("#cur_currency").val(a);
-        $("#cur_currency_dop").val(a);
-        $("#currency").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_currency_dop(a) {
-        $("#cur_currency_dop").val(a);
-        $("#cur_currency").val(a);
-        $("#currency_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_poruch(a) {
-        $("#cur_poruch").val(a);
-        $("#poruch").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_podtv_dohod(a) {
-        $("#cur_podtv_dohod").val(a);
-        $("#podtv_dohod").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_form_vidach(a) {
-        $("#cur_form_vidach").val(a);
-        $("#form_vidach").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_srok_rasm(a) {
-        $("#cur_srok_rasm").val(a);
-        $("#srok_rasm").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_cur_registr(a) {
-        $("#cur_registr").val(a);
-        $("#registr").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_cur_category(a) {
-        $("#cur_category").val(a);
-        $("#category").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_cur_stag(a) {
-        $("#cur_stag").val(a);
-        $("#stag").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }
-    function select_cur_stag_last(a) {
-        $("#cur_stag_last").val(a);
-        $("#stag_last").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }</script>
-<script>function select_zalog(a) {
-        $("#zalog_cur").val(a);
-        $("#zalog").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }</script>
-<script>function select_target(a) {
-        $("#cur_target").val(a);
-        $("#target").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }</script>
-<script>function select_period_srok(a) {
-        $("#cur_period").val(a);
-        $("#cur_period_dop").val(a);
-        $("#period").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }</script>
-<script>function select_period_srok_dop(a) {
-        $("#cur_period_dop").val(a);
-        $("#cur_period").val(a);
-        $("#period_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
-        Get_PotrKr();
-    }</script>
-<script>function toggle_menu(i) {
-        el = document.getElementsByClassName('-link');
-        $(".-link").removeClass("-active");
-        $('#navigation').attr('data-current', i);
-        /*el[i].addClass('-active');*/
-    }</script>
-<script>function select_strahov() {
-        var c = document.querySelector('#strahov');
-        if (c.checked) {
-            $("#label_strahov").addClass('_3QFEG');
-        } else {
-            $("#label_strahov").removeClass('_3QFEG');
-        }
-        Get_PotrKr();
-    }
-    function select_gr() {
-        var gr = document.querySelector('#cur_gr');
-        if (gr.checked) {
-            $("#label_gr").addClass('_3QFEG');
-        } else {
-            $("#label_gr").removeClass('_3QFEG');
-        }
-        Get_PotrKr();
-    }</script>
-<script>function Get_PotrKr() {
-        $.ajax({
-            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
-            type: "POST",
-            error: function (response) {
-                $(".status").html(response.status + "<br>" + response.msg);
-                console.log("Ошибка");
-            },
-            success: function (response) {
-                res = jQuery.parseJSON(response);
-
-                if ($('#navigation').attr('data-current', '1')) {
-                    res.sort(function (a, b) {
-                        return a.rating < b.rating;
-                    });
-                    res.sort();
-                    console.log(res);
-                }
-                else {
-                    res.sort(function (a, b) {
-                        return a.name > b.name;
-                    });
-                    res.sort();
-                    console.log(res);
-                }
-                var data = {"bank_offers": res};
-                console.log(data);
-                change(data);
-                console.log("Успешно загрузили данные");
-            },
-        });
-    }
-    Get_PotrKr();</script><?php get_footer(); ?>
+<?php get_footer(); ?>
 <div class="_2Jclz _2fZko _1odi0 _3m0xh" id="overlay" style="display:none;">
     <div class="ud9DQ _21AWC _2t8V0"></div>
     <div class="_2TVkK  _3BjeW _3dfdz _2Muap">
@@ -1484,3 +1148,340 @@ wp_head(); ?>
     });
 </script>
 <script src="<?= get_template_directory_uri(); ?>/assets/front/css/kredit_theme/js/table-sort-and-load-more-credits.js"></script>
+<script>$(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 1,
+            max: 1500,
+            values: [1, 500],
+            step: 1,
+            slide: function (event, ui) {
+                $("#price").val(ui.values[1] * 1000);
+                $("#slider-range_dop").slider("option", "values", [1, ui.values[1] * 1000]);
+                document.getElementById('price_dop').value = ui.values[1] * 1000;
+                Get_PotrKr();
+            }
+        });
+        $("#price").val($("#slider-range").slider("values", 1) * 1000);
+    });    </script>
+<script>$(function () {
+        $("#slider-range_dop").slider({
+            range: true,
+            min: 1,
+            max: 1500,
+            values: [1, 1500],
+            step: 1,
+            slide: function (event, ui) {
+                $("#price_dop").val(ui.values[1] * 1000);
+                $("#slider-range").slider("option", "values", [1, ui.values[1] * 1000]);
+                document.getElementById('price').value = ui.values[1] * 1000;
+                Get_PotrKr();
+            }
+        });
+        $("#price_dop").val($("#slider-range_dop").slider("values", 1) * 1000);
+    });    </script>
+<script>        function show_dop() {
+        $('#overlay').show();
+    }
+    function close_dop() {
+        $('#overlay').hide();
+    }
+    function clear_dop() {
+        $("#slider-range_dop").slider("option", "values", [1, 102]); //changeFX was 500
+        $("#price_dop").val(100000); //changeFX was 500
+        $("#slider-range").slider("option", "values", [1, 102]); //changeFX was 500
+        $("#price").val(100000); //changeFX was 500
+        $("#cur_period").val('3 года');
+        $("#cur_period_dop").val('3 года');
+        $("#cur_city_dop").val('');
+        $("#zalog_cur").val('Неважно');
+        $("#cur_target").val('Любая');
+        $("#cur_poruch").val('Неважно');
+        $("#cur_podtv_dohod").val('Любое');
+        $("#cur_form_vidach").val('Любая');
+        $("#cur_srok_rasm").val('Неважен');
+        $("#cur_registr").val('Не важно');
+        $("#cur_category").val('Неважно');
+        $("#cur_stag").val('Неважен');
+        $("#cur_stag_last").val('Неважен');
+        select_currency("₽");
+        Get_PotrKr();
+    }            </script>
+<script type="text/javascript">            $(function () {
+        l1 = document.getElementById('va-1').innerHTML.length;
+        l2 = document.getElementById('va-2').innerHTML.length;
+        l3 = document.getElementById('va-3').innerHTML.length;
+        maxl = l1;
+        if (l2 > l1) maxl = l2;
+        if (l3 > l2) maxl = l3;
+
+        if (document.body.clientWidth < 768) {
+            k = 54;
+            v = 25;
+            vh = 100;
+
+        }
+        else {
+            k = 116;
+            v = 30;
+            vh = 160;
+
+        }
+        $('#va-accordion').vaccordion({
+            visibleSlices: 5,
+            accordionH: vh + (maxl / k) * 30,
+            expandedHeight: maxl,
+            expandedHeight1: vh + (l1 / k) * v,
+            expandedHeight2: vh + (l2 / k) * v,
+            expandedHeight3: vh + (l3 / k) * v,
+
+            animOpacity: 1,
+            contentAnimSpeed: 2000,
+            lengthSlide: maxl / k
+        });
+    });        </script>
+<script> function select_cur_dop() {
+        if ($("#currency_dop").css('visibility') == 'hidden') {
+            $("#currency_dop").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#currency_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    } </script>
+<script>function select_cur() {
+        if ($("#currency").css('visibility') == 'hidden') {
+            $("#currency").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#currency").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    } </script>
+<script>function select_cur_target() {
+        if ($("#target").css('visibility') == 'hidden') {
+            $("#target").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#target").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_cur_poruch() {
+        if ($("#poruch").css('visibility') == 'hidden') {
+            $("#poruch").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#poruch").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_cur_form_vidach() {
+        if ($("#form_vidach").css('visibility') == 'hidden') {
+            $("#form_vidach").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#form_vidach").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_cur_srok_rasm() {
+        if ($("#srok_rasm").css('visibility') == 'hidden') {
+            $("#srok_rasm").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#srok_rasm").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_cur_podtv_dohod() {
+        if ($("#podtv_dohod").css('visibility') == 'hidden') {
+            $("#podtv_dohod").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#podtv_dohod").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_category() {
+        if ($("#category").css('visibility') == 'hidden') {
+            $("#category").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#category").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_stag() {
+        if ($("#stag").css('visibility') == 'hidden') {
+            $("#stag").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#stag").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_stag_last() {
+        if ($("#stag_last").css('visibility') == 'hidden') {
+            $("#stag_last").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#stag_last").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_registr() {
+        if ($("#registr").css('visibility') == 'hidden') {
+            $("#registr").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#registr").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_period() {
+        if ($("#period").css('visibility') == 'hidden') {
+            $("#period").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#period").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function select_period_dop() {
+        if ($("#period_dop").css('visibility') == 'hidden') {
+            $("#period_dop").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#period_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function zalog_select() {
+        if ($("#zalog").css('visibility') == 'hidden') {
+            $("#zalog").css({'visibility': 'visible', 'overflow-x': 'visible', 'overflow-y': 'visible'});
+        } else {
+            $("#zalog").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        }
+    }</script>
+<script>function price_change_dop() {
+        a = document.getElementById('price_dop').value;
+        if (a >= 10000 && a <= 15000000) {
+            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
+            $("#slider-range").slider("option", "values", [1, a / 10000]);
+            Get_PotrKr();
+        }
+    }</script>
+<script>function price_change() {
+        a = document.getElementById('price').value;
+        if (a >= 10000 && a <= 15000000) {
+            $("#slider-range").slider("option", "values", [1, a / 10000]);
+            $("#slider-range_dop").slider("option", "values", [1, a / 10000]);
+            Get_PotrKr();
+        }
+    }</script>
+<script>function select_currency(a) {
+        $("#cur_currency").val(a);
+        $("#cur_currency_dop").val(a);
+        $("#currency").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_currency_dop(a) {
+        $("#cur_currency_dop").val(a);
+        $("#cur_currency").val(a);
+        $("#currency_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_poruch(a) {
+        $("#cur_poruch").val(a);
+        $("#poruch").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_podtv_dohod(a) {
+        $("#cur_podtv_dohod").val(a);
+        $("#podtv_dohod").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_form_vidach(a) {
+        $("#cur_form_vidach").val(a);
+        $("#form_vidach").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_srok_rasm(a) {
+        $("#cur_srok_rasm").val(a);
+        $("#srok_rasm").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_cur_registr(a) {
+        $("#cur_registr").val(a);
+        $("#registr").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_cur_category(a) {
+        $("#cur_category").val(a);
+        $("#category").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_cur_stag(a) {
+        $("#cur_stag").val(a);
+        $("#stag").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }
+    function select_cur_stag_last(a) {
+        $("#cur_stag_last").val(a);
+        $("#stag_last").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }</script>
+<script>function select_zalog(a) {
+        $("#zalog_cur").val(a);
+        $("#zalog").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }</script>
+<script>function select_target(a) {
+        $("#cur_target").val(a);
+        $("#target").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }</script>
+<script>function select_period_srok(a) {
+        $("#cur_period").val(a);
+        $("#cur_period_dop").val(a);
+        $("#period").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }</script>
+<script>function select_period_srok_dop(a) {
+        $("#cur_period_dop").val(a);
+        $("#cur_period").val(a);
+        $("#period_dop").css({'visibility': 'hidden', 'overflow-x': 'hidden', 'overflow-y': 'hidden'});
+        Get_PotrKr();
+    }</script>
+<script>function toggle_menu(i) {
+        el = document.getElementsByClassName('-link');
+        $(".-link").removeClass("-active");
+        $('#navigation').attr('data-current', i);
+        /*el[i].addClass('-active');*/
+    }</script>
+<script>function select_strahov() {
+        var c = document.querySelector('#strahov');
+        if (c.checked) {
+            $("#label_strahov").addClass('_3QFEG');
+        } else {
+            $("#label_strahov").removeClass('_3QFEG');
+        }
+        Get_PotrKr();
+    }
+    function select_gr() {
+        var gr = document.querySelector('#cur_gr');
+        if (gr.checked) {
+            $("#label_gr").addClass('_3QFEG');
+        } else {
+            $("#label_gr").removeClass('_3QFEG');
+        }
+        Get_PotrKr();
+    }</script>
+<script>function Get_PotrKr() {
+        $.ajax({
+            url: "https://xn-----6kccbugwdmdcrtidm5a5byn.xn--p1ai/wp-content/themes/customizr/select_potr_kr.php",
+            type: "POST",
+            error: function (response) {
+                $(".status").html(response.status + "<br>" + response.msg);
+                console.log("Ошибка");
+            },
+            success: function (response) {
+                res = jQuery.parseJSON(response);
+
+                if ($('#navigation').attr('data-current', '1')) {
+                    res.sort(function (a, b) {
+                        return a.rating < b.rating;
+                    });
+                    res.sort();
+                    console.log(res);
+                }
+                else {
+                    res.sort(function (a, b) {
+                        return a.name > b.name;
+                    });
+                    res.sort();
+                    console.log(res);
+                }
+                var data = {"bank_offers": res};
+                console.log(data);
+                change(data);
+                console.log("Успешно загрузили данные");
+            },
+        });
+    }
+    Get_PotrKr();</script>

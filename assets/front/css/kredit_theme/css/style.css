@@ -703,7 +703,8 @@ li.nav__search,
 }
 
 ._2rXEs {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
+    padding-bottom: 50px;
     border-bottom: 0;
 }
 
@@ -898,4 +899,16 @@ li.nav__search,
     ._1zQdT {
         min-width: 250px;
     }
+}
+
+._2rXEs.aqIhJ.calculator-list-theme__wrapper {
+    background-color: #e2e2e2;
+}
+
+button._2sdWW.calculator-list-theme__button-conditions._1VABv._3zDyU._3x77s {
+    background-color: #fff;
+}
+
+#slider-range {
+    background: transparent;
 }
